@@ -29,7 +29,7 @@ RWPROCMEM_BRANCHE="main"
 # Magiskboot
 MAGISKBOOT_DLINK="https://github.com/xiaoxindada/magiskboot_ndk_on_linux/releases/download/Magiskboot-26301-48/magiskboot.7z"
 MAGISKBOOT="$WORKDIR/magiskboot/magiskboot"
-ORIGIN_BOOTIMG_DLINK="https://github.com/mochenya/action_selene_seakernel_kernelsu/releases/download/originboot/boot.img"
+ORIGIN_BOOTIMG_DLINK="https://github.com/zhuzivq/action_selene_seakernel_kernelsu/releases/download/originimg/boot.img"
 
 # Build
 DEVICES_CODE="selene"
