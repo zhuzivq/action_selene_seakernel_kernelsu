@@ -11,8 +11,8 @@ ZYCLANG_DLINK="https://github.com/ZyCromerZ/Clang/releases/download/18.0.0-20231
 ZYCLANG_DIR="$WORKDIR/ZyClang/bin"
 
 # Kernel Source
-KERNEL_GIT="https://github.com/Kentanglu/Sea_Kernel-Selene.git"
-KERNEL_BRANCHE="sea-release"
+KERNEL_GIT="https://github.com/zhuzivq/Sea_Kernel-Selene.git"
+KERNEL_BRANCHE="twelve-test"
 KERNEL_DIR="$WORKDIR/SeaKernel"
 SEA_KERNEL_VERSION="Alina"
 SEA_KERNEL_CODENAME="8.5/Alina🧜✨"
