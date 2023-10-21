@@ -22,6 +22,10 @@ SEA_KERNEL_CODENAME_ESCAPE="8.5\/Alina🧜✨"
 ANYKERNEL3_GIT="https://github.com/Kentanglu/AnyKernel3.git"
 ANYKERNEL3_BRANCHE="selene-old"
 
+# rwProcMem
+RWPROCMEM_GIT="https://github.com/zhuzivq/rwProcKernelmodules.git"
+RWPROCMEM_BRANCHE="main"
+
 # Magiskboot
 MAGISKBOOT_DLINK="https://github.com/xiaoxindada/magiskboot_ndk_on_linux/releases/download/Magiskboot-26301-48/magiskboot.7z"
 MAGISKBOOT="$WORKDIR/magiskboot/magiskboot"
@@ -83,6 +87,11 @@ apply_patchs
 
 sed -i "/CONFIG_LOCALVERSION=\"/s/.$/$SEA_KERNEL_CODENAME_ESCAPE-KSU-$KERNELSU_VERSION\"/" $DEVICE_DEFCONFIG_FILE
 msg " • 🌸 $(grep 'CONFIG_LOCALVERSION=' $DEVICE_DEFCONFIG_FILE) 🌸 "
+
+sed -i "/CONFIG_LOCALVERSION=\"/s/.$/-KSU-$KERNELSU_VERSION\"/" $DEVICE_DEFCONFIG_FILE
+cd $KERNEL_DIR/drivers && git clone -b $RWPROCMEM_BRANCHE $RWPROCMEM_GIT
+sed -i '1i obj-y += rwProcKernelmodules/' $KERNEL_DIR/drivers/Makefile
+cd $KERNEL_DIR
 
 # BUILD KERNEL
 msg " • 🌸 Started Compilation 🌸 "
