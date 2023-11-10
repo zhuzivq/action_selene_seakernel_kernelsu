@@ -22,10 +22,6 @@ SEA_KERNEL_CODENAME_ESCAPE="8.5\/Alina🧜✨"
 ANYKERNEL3_GIT="https://github.com/Kentanglu/AnyKernel3.git"
 ANYKERNEL3_BRANCHE="selene-old"
 
-# rwProcMem
-RWPROCMEM_GIT="https://github.com/zhuzivq/rwProcKernelmodules.git"
-RWPROCMEM_BRANCHE="main"
-
 # Magiskboot
 MAGISKBOOT_DLINK="https://github.com/xiaoxindada/magiskboot_ndk_on_linux/releases/download/Magiskboot-26301-48/magiskboot.7z"
 MAGISKBOOT="$WORKDIR/magiskboot/magiskboot"
