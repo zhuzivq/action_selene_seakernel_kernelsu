@@ -11,8 +11,8 @@ ZYCLANG_DLINK="https://github.com/ZyCromerZ/Clang/releases/download/18.0.0-20231
 ZYCLANG_DIR="$WORKDIR/ZyClang/bin"
 
 # Kernel Source
-KERNEL_GIT="https://github.com/zhuzivq/Sea_Kernel-Selene.git"
-KERNEL_BRANCHE="twelve-test"
+KERNEL_GIT="https://github.com/zhuzivq/Kernel_XiaomiOpenSource_selene.git"
+KERNEL_BRANCHE="main"
 KERNEL_DIR="$WORKDIR/SeaKernel"
 SEA_KERNEL_VERSION="Alina"
 SEA_KERNEL_CODENAME="8.5/Alina🧜✨"
@@ -33,7 +33,7 @@ ORIGIN_BOOTIMG_DLINK="https://github.com/zhuzivq/action_selene_seakernel_kernels
 
 # Build
 DEVICES_CODE="selene"
-DEVICE_DEFCONFIG="selene_defconfig"
+DEVICE_DEFCONFIG="selene_tiramisu_defconfig"
 DEVICE_DEFCONFIG_FILE="$KERNEL_DIR/arch/arm64/configs/$DEVICE_DEFCONFIG"
 IMAGE="$KERNEL_DIR/out/arch/arm64/boot/Image.gz-dtb"
 DTB="$KERNEL_DIR/out/arch/arm64/boot/dts/mediatek/mt6768.dtb"
