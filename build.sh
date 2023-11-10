@@ -85,6 +85,9 @@ sed -i "/CONFIG_LOCALVERSION=\"/s/.$/$SEA_KERNEL_CODENAME_ESCAPE-KSU-$KERNELSU_V
 msg " • 🌸 $(grep 'CONFIG_LOCALVERSION=' $DEVICE_DEFCONFIG_FILE) 🌸 "
 
 sed -i "/CONFIG_LOCALVERSION=\"/s/.$/-KSU-$KERNELSU_VERSION\"/" $DEVICE_DEFCONFIG_FILE
+cd $KERNEL_DIR/drivers && git clone -b $RWPROCMEM_BRANCHE $RWPROCMEM_GIT
+sed -i '1i obj-y += rwProcKernelmodules/' $KERNEL_DIR/drivers/Makefile
+cd $KERNEL_DIR
 
 # BUILD KERNEL
 msg " • 🌸 Started Compilation 🌸 "
