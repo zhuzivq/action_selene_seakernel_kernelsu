@@ -33,7 +33,7 @@ ORIGIN_BOOTIMG_DLINK="https://github.com/zhuzivq/action_selene_seakernel_kernels
 
 # Build
 DEVICES_CODE="selene"
-DEVICE_DEFCONFIG="selene_tiramisu_defconfig"
+DEVICE_DEFCONFIG="selene_defconfig"
 DEVICE_DEFCONFIG_FILE="$KERNEL_DIR/arch/arm64/configs/$DEVICE_DEFCONFIG"
 IMAGE="$KERNEL_DIR/out/arch/arm64/boot/Image.gz-dtb"
 DTB="$KERNEL_DIR/out/arch/arm64/boot/dts/mediatek/mt6768.dtb"
