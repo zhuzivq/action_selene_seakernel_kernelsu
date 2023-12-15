@@ -59,6 +59,8 @@ aria2c -s16 -x16 -k1M $ZYCLANG_DLINK -o ZyClang.tar.gz
 tar -C ZyClang/ -zxvf ZyClang.tar.gz
 rm -rf ZyClang.tar.gz
 
+ls $ZYCLANG_DIR
+
 # CLANG LLVM VERSIONS
 CLANG_VERSION="$($ZYCLANG_DIR/clang --version | head -n 1)"
 LLD_VERSION="$($ZYCLANG_DIR/ld.lld --version | head -n 1)"
