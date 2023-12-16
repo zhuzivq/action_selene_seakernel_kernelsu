@@ -127,7 +127,7 @@ rm -rf out
 make O=out $args $DEVICE_DEFCONFIG
 KERNEL_VERSION=$(make O=out $args kernelversion | grep "4.14")
 msg " • 🌸 LINUX KERNEL VERSION : $KERNEL_VERSION 🌸 "
-make O=out $args -j"$(nproc --all)" | tee "$WORKDIR/out/Build.log" -w
+make O=out $args -j"$(nproc --all)" | tee "$WORKDIR/out/Build.log"
 
 msg " • 🌸 Checking builds 🌸 "
 if [ ! -e $IMAGE ]; then
