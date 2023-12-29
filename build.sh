@@ -11,8 +11,8 @@ ZYCLANG_DLINK="https://github.com/ZyCromerZ/Clang/releases/download/18.0.0git-20
 ZYCLANG_DIR="$WORKDIR/ZyClang/bin"
 
 # Kernel Source
-KERNEL_GIT="https://github.com/zhuzivq/Kernel_XiaomiOpenSource_selene.git"
-KERNEL_BRANCHE="main"
+KERNEL_GIT="https://github.com/zhuzivq/Sea_Kernel-Selene.git"
+KERNEL_BRANCHE="twelve-test"
 KERNEL_DIR="$WORKDIR/SeaKernel"
 SEA_KERNEL_VERSION="Alina"
 SEA_KERNEL_CODENAME="8.5/Alina🧜✨"
@@ -29,7 +29,7 @@ ANYKERNEL3_BRANCHE="selene-old"
 # Magiskboot
 MAGISKBOOT_DLINK="https://github.com/xiaoxindada/magiskboot_ndk_on_linux/releases/download/Magiskboot-26301-48/magiskboot.7z"
 MAGISKBOOT="$WORKDIR/magiskboot/magiskboot"
-ORIGIN_BOOTIMG_DLINK="https://github.com/zhuzivq/action_selene_seakernel_kernelsu/releases/download/originimg/boot.img"
+ORIGIN_BOOTIMG_DLINK="https://github.com/zhuzivq/action_selene_seakernel_kernelsu/releases/download/seaimg/boot.img"
 
 # Build
 DEVICES_CODE="selene"
