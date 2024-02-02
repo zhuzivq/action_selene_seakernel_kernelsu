@@ -20,7 +20,7 @@ SEA_KERNEL_CODENAME_ESCAPE="8.5\/Alina🧜✨"
 
 # rwProcMem
 RWPROCMEM_GIT="https://github.com/zhuzivq/rwProcKernelmodules.git"
-RWPROCMEM_BRANCHE="main"
+RWPROCMEM_BRANCHE="master"
 
 # Anykernel3
 ANYKERNEL3_GIT="https://github.com/Kentanglu/AnyKernel3.git"
