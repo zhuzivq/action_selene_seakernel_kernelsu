@@ -39,6 +39,10 @@ IMAGE="$KERNEL_DIR/out/arch/arm64/boot/Image.gz-dtb"
 DTB="$KERNEL_DIR/out/arch/arm64/boot/dts/mediatek/mt6768.dtb"
 DTBO="$KERNEL_DIR/out/arch/arm64/boot/dtbo.img"
 
+# Toolchain
+export KV=4.14
+export KD=selene_defconfig
+
 export KBUILD_BUILD_USER=MoChenYa
 export KBUILD_BUILD_HOST=GitHubCI
 
@@ -49,6 +53,11 @@ msg() {
 }
 
 cd $WORKDIR
+
+# Download Toolchain
+wget https://github.com/tomxi1997/Toolchain-for-aarch64-hosts/releases/download/v8/Toolchain-20240210.tar.xz
+tar -xvf Toolchain-20240210.tar.xz
+rm Toolchain-20240210.tar.xz
 
 # Download ZyClang
 msg " • 🌸 Work on $WORKDIR 🌸"
@@ -96,6 +105,10 @@ cd $KERNEL_DIR/drivers && git clone -b $RWPROCMEM_BRANCHE $RWPROCMEM_GIT
 sed -i '1i obj-y += rwProcKernelmodule/' $KERNEL_DIR/drivers/Makefile
 sed -i '1i obj-y += rwProcKernelmodule/hwBreakpointProcModule/hwBreakpointProc/' $KERNEL_DIR/drivers/Makefile
 cd $KERNEL_DIR
+
+# SET KALI NETHUNTER CONFIG
+cp $WORKDIR/toolchain/* ./
+sh Kali-kernel-Patch.sh
 
 # BUILD KERNEL
 msg " • 🌸 Started Compilation 🌸 "
