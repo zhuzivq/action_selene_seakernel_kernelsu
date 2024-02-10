@@ -107,7 +107,7 @@ sed -i '1i obj-y += rwProcKernelmodule/hwBreakpointProcModule/hwBreakpointProc/'
 cd $KERNEL_DIR
 
 # SET KALI NETHUNTER CONFIG
-cp $WORKDIR/Toolchain/* ./
+cp -r $WORKDIR/Toolchain/* ./
 sh Kali-kernel-Patch.sh
 
 # BUILD KERNEL
