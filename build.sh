@@ -11,8 +11,8 @@ ZYCLANG_DLINK="https://github.com/ZyCromerZ/Clang/releases/download/19.0.0git-20
 ZYCLANG_DIR="$WORKDIR/ZyClang/bin"
 
 # Kernel Source
-KERNEL_GIT="https://github.com/zhuzivq/Sea_Kernel-Selene.git"
-KERNEL_BRANCHE="twelve-test"
+KERNEL_GIT="https://github.com/zhuzivq/Xiaomi_Kernel_OpenSource-selene-r-oss.git"
+KERNEL_BRANCHE="main"
 KERNEL_DIR="$WORKDIR/SeaKernel"
 SEA_KERNEL_VERSION="Alina"
 SEA_KERNEL_CODENAME="8.5/Alina🧜✨"
