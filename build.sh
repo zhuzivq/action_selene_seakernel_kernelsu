@@ -18,10 +18,6 @@ SEA_KERNEL_VERSION="Alina"
 SEA_KERNEL_CODENAME="8.5/Alina🧜✨"
 SEA_KERNEL_CODENAME_ESCAPE="8.5\/Alina🧜✨"
 
-# rwProcMem
-RWPROCMEM_GIT="https://github.com/zhuzivq/rwProcKernelmodule.git"
-RWPROCMEM_BRANCHE="master"
-
 # Anykernel3
 ANYKERNEL3_GIT="https://github.com/Kentanglu/AnyKernel3.git"
 ANYKERNEL3_BRANCHE="selene-old"
@@ -92,8 +88,6 @@ apply_patchs
 msg " • 🌸 $(grep 'CONFIG_LOCALVERSION=' $DEVICE_DEFCONFIG_FILE) 🌸 "
 
 #sed -i "/CONFIG_LOCALVERSION=\"/s/.$/-KSU-$KERNELSU_VERSION\"/" $DEVICE_DEFCONFIG_FILE
-cd $KERNEL_DIR/drivers && git clone -b $RWPROCMEM_BRANCHE $RWPROCMEM_GIT
-sed -i '1i obj-y += rwProcKernelmodule/' $KERNEL_DIR/drivers/Makefile
 cd $KERNEL_DIR
 
 # BUILD KERNEL
