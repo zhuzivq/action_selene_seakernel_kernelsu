@@ -85,6 +85,9 @@ msg " • 🌸 Applying patches 🌸 "
 #}
 #apply_patchs
 
+patch -p1 < "$WORKDIR/patchs/KernelSU-UnloadModule.patch"
+msg " • 🌸 Apply patch file: $WORKDIR/patchs/KernelSU-UnloadModule.patch 🌸 "
+
 #sed -i "/CONFIG_LOCALVERSION=\"/s/.$/$SEA_KERNEL_CODENAME_ESCAPE-KSU-$KERNELSU_VERSION\"/" $DEVICE_DEFCONFIG_FILE
 msg " • 🌸 $(grep 'CONFIG_LOCALVERSION=' $DEVICE_DEFCONFIG_FILE) 🌸 "
 
