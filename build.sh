@@ -76,14 +76,14 @@ msg " • 🌸 KernelSU version: $KERNELSU_VERSION 🌸 "
 # PATCH KERNELSU
 msg " • 🌸 Applying patches 🌸 "
 
-apply_patchs () {
-for patch_file in $WORKDIR/patchs/*.patch
-	do
-	patch -p1 < "$patch_file"
-        msg " • 🌸 Apply patch file: $patch_file 🌸 "
-done
-}
-apply_patchs
+#apply_patchs () {
+#for patch_file in $WORKDIR/patchs/*.patch
+#	do
+#	patch -p1 < "$patch_file"
+#        msg " • 🌸 Apply patch file: $patch_file 🌸 "
+#done
+#}
+#apply_patchs
 
 #sed -i "/CONFIG_LOCALVERSION=\"/s/.$/$SEA_KERNEL_CODENAME_ESCAPE-KSU-$KERNELSU_VERSION\"/" $DEVICE_DEFCONFIG_FILE
 msg " • 🌸 $(grep 'CONFIG_LOCALVERSION=' $DEVICE_DEFCONFIG_FILE) 🌸 "
