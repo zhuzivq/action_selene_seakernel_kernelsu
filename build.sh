@@ -80,7 +80,7 @@ apply_patchs () {
 for patch_file in $WORKDIR/patchs/*.patch
 	do
 	patch -p1 < "$patch_file"
- msg " 🌸 Apply patch file $patch_file 🌸 "
+        msg " • 🌸 Apply patch file $patch_file 🌸 "
 done
 }
 apply_patchs
