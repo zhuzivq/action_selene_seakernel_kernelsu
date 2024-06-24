@@ -25,7 +25,7 @@ ANYKERNEL3_BRANCHE="selene-old"
 # Magiskboot
 MAGISKBOOT_DLINK="https://github.com/xiaoxindada/magiskboot_ndk_on_linux/releases/download/Magiskboot-26301-48/magiskboot.7z"
 MAGISKBOOT="$WORKDIR/magiskboot/magiskboot"
-ORIGIN_BOOTIMG_DLINK="https://github.com/zhuzivq/action_selene_seakernel_kernelsu/releases/download/seleneimg/boot_miui12.5.12.img"
+ORIGIN_BOOTIMG_DLINK="https://github.com/zhuzivq/action_selene_seakernel_kernelsu/releases/download/seleneimg/boot.img"
 
 # Build
 DEVICES_CODE="selene"
