@@ -23,9 +23,9 @@ ANYKERNEL3_GIT="https://github.com/Kentanglu/AnyKernel3.git"
 ANYKERNEL3_BRANCHE="selene-old"
 
 # Magiskboot
-MAGISKBOOT_DLINK="https://github.com/xiaoxindada/magiskboot_ndk_on_linux/releases/download/Magiskboot-27001-58/magiskboot.7z"
+MAGISKBOOT_DLINK="https://github.com/xiaoxindada/magiskboot_ndk_on_linux/releases/download/Magiskboot-28001-73/magiskboot.7z"
 MAGISKBOOT="$WORKDIR/magiskboot/magiskboot"
-ORIGIN_BOOTIMG_DLINK="https://github.com/mochenya/action_selene_seakernel_kernelsu/releases/download/originboot/boot.img"
+ORIGIN_BOOTIMG_DLINK="https://github.com/zhuzivq/action_selene_seakernel_kernelsu/releases/download/originboot/boot.img"
 
 # Build
 DEVICES_CODE="selene"
