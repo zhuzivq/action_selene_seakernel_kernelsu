@@ -38,12 +38,6 @@ DTBO="$KERNEL_DIR/out/arch/arm64/boot/dtbo.img"
 export KBUILD_BUILD_USER=MoChenYa
 export KBUILD_BUILD_HOST=GitHubCI
 
-msg() {
-	echo
-	echo -e "\e[1;32m$*\e[0m"
-	echo
-}
-
 cd $WORKDIR
 
 # Download ZyClang
